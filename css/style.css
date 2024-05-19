@@ -1,0 +1,81 @@
+:root {
+    /* Colores */
+    --prin-color: #d89845;
+    --prin-color-dark: #c54b2c;
+    --second-color: #473430;
+    --text-color: #eae2cf;
+}
+
+
+
+body {
+    font-family: 'Heebo', serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+h6 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Poetsen One', serif;
+    font-weight: 48px;
+}
+
+.h5-text {
+    font-family: 'Poetsen One', serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+small {
+    font-size: 18px;
+}
+
+
+/* Menu */
+.menu-img {
+    width: 120px;
+    height: 120px;
+}
+
+.menu-text {
+    font-weight: 700;
+}
+
+/* Pruebas */
+
+.text-white{
+    color: var(--text-color) !important;
+}
+
+.text-warning {
+    color: var(--prin-color) !important;
+}
+
+.border-warning{
+    border-color: var(--prin-color)!important;
+}
+
+.btn-warning{
+    background-color: var(--prin-color) !important;
+    border-color: var(--prin-color);
+    color: white;
+}
+
+.btn-warning:hover{
+    background-color: var(--prin-color-dark) !important;
+    border-color: var(--prin-color-dark);
+    color: var(--text-color);
+}
+
+.bg-dark{
+    background-color: var(--second-color) !important;
+}
