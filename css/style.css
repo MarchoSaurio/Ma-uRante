@@ -75,7 +75,7 @@ small {
 }
 
 .text-warning {
-    color: var(--prin-color) !important;
+    color: red !important;
 }
 
 .border-warning{
