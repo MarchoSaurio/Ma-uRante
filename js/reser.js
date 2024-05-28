@@ -8,7 +8,7 @@ document.getElementById('reservation-form').addEventListener('submit', function(
     const people = encodeURIComponent(document.getElementById('people').value);
 
     // Crear la URL con los datos
-    const url = `https://marchosaurio.github.io/PruebaQR/confirmacion.html?name=${name}&date=${date}&time=${time}&people=${people}`;
+    const url = `https://marchosaurio.github.io/Ma-uRante/verReserva.html?name=${name}&date=${date}&time=${time}&people=${people}`;
     // Generar el QR
     const qrCodeContainer = document.getElementById('qrcode');
     qrCodeContainer.innerHTML = '';  // Limpiar cualquier código QR previo
