@@ -3,37 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservaciones - Restaurante XYZ</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <title>Confirmación de Reservación - Restaurante XYZ</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
 <body>
     <header>
-        <h1>Reservaciones</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="reservaciones.html">Reservaciones</a></li>
-            </ul>
-        </nav>
+        <h1>Confirmación de Reservación</h1>
     </header>
     <main>
-        <form id="reservation-form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="date">Fecha:</label>
-            <input type="date" id="date" name="date" required>
-            <label for="time">Hora:</label>
-            <input type="time" id="time" name="time" required>
-            <label for="people">Número de Personas:</label>
-            <input type="number" id="people" name="people" required>
-            <button type="submit">Reservar</button>
-        </form>
-        <div id="qrcode"></div>
+        <h2>Detalles de la Reservación</h2>
+        <p id="nombre"></p>
+        <p id="fecha"></p>
+        <p id="hora"></p>
+        <p id="personas"></p>
     </main>
     <footer>
         <p>© 2024 Restaurante XYZ. Todos los derechos reservados.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.min.js"></script>
-    <script src="js/reser.js"></script>
+    <script>
+        // Extraer parámetros de la URL
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('nombre').textContent = `Nombre: ${params.get('name')}`;
+        document.getElementById('fecha').textContent = `Fecha: ${params.get('date')}`;
+        document.getElementById('hora').textContent = `Hora: ${params.get('time')}`;
+        document.getElementById('personas').textContent = `Número de Personas: ${params.get('people')}`;
+    </script>
 </body>
 </html>
